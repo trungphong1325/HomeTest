@@ -32,7 +32,6 @@ class KeyHotAdapter : ListAdapter<UIModel, KeyHotAdapter.ViewHolder>(
         if(drawable==null){
             drawable = holder.txtName.background as? GradientDrawable
         }
-
         holder.txtName.text = model?.name
         drawable?.setColor(Color.parseColor(model?.background))
     }
